@@ -1,4 +1,5 @@
-# Copied from atlibplot examples: https://matplotlib.org/stable/gallery/lines_bars_and_markers/barh.html#sphx-glr-gallery-lines-bars-and-markers-barh-py
+# Copied from matlibplot examples: https://matplotlib.org/stable/gallery/lines_bars_and_markers/barh.html#sphx-glr-gallery-lines-bars-and-markers-barh-py
+# First install matplotlib and numpy by running: pip install matplotlib numpy
 
 import matplotlib.pyplot as plt
 import numpy as np
