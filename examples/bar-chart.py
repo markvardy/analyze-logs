@@ -65,5 +65,5 @@ plt.show()
 
 
 
-ax.xaxis.set_minor_locator(dates.HourLocator(interval=4))   # every 4 hours
-ax.xaxis.set_minor_formatter(dates.DateFormatter('%H:%M'))  # hours and minutes
+# ax.xaxis.set_minor_locator(dates.HourLocator(interval=4))   # every 4 hours
+# ax.xaxis.set_minor_formatter(dates.DateFormatter('%H:%M'))  # hours and minutes
