@@ -1,0 +1,67 @@
+[
+    {
+        "started": 0,
+        "task": "Start"
+    },
+    {
+        "started": 1,
+        "task": "api-routing",
+        "name": "default-api-route"
+    },
+    {
+        "started": 1,
+        "title": "default-cors",
+        "task": "api-cors",
+        "name": "default-api-cors"
+    },
+    {
+        "started": 1,
+        "title": "default-wsdl",
+        "task": "assembly-wsdl",
+        "name": "default-wsdl"
+    },
+    {
+        "started": 1,
+        "title": "default-html-page",
+        "task": "assembly-html-page",
+        "name": "default-html-page"
+    },
+    {
+        "started": 1,
+        "title": "default-client-identification",
+        "task": "api-client-identification",
+        "name": "default-api-client-identification"
+    },
+    {
+        "started": 1,
+        "title": "default-ratelimit",
+        "task": "assembly-ratelimit",
+        "name": "default-api-ratelimit"
+    },
+    {
+        "started": 1,
+        "title": "default-security",
+        "task": "api-security",
+        "name": "default-api-security"
+    },
+    {
+        "started": 1,
+        "task": "assembly-function-call",
+        "name": "default-func-call-preflow"
+    },
+    {
+        "started": 1,
+        "task": "assembly-function-call",
+        "name": "default-func-call-main"
+    },
+    {
+        "started": 1,
+        "task": "api-result",
+        "name": "default-api-result"
+    },
+    {
+        "started": 1,
+        "task": "assembly-function-call",
+        "name": "default-func-call-global"
+    }
+]
