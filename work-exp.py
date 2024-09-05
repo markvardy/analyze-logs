@@ -73,7 +73,39 @@ for list4 in listoflist:
     sum1.append(sums)
 # print (sum1)
 
-    
+
+time2 = []
+sum4 = []
+listoflist2 = []
+for row in api2:
+    item1 = []
+    timestamp1 = row[0]
+    datetime_timestamp1 = parser.parse(timestamp1)
+    # datetime.strftime(timestamp, '%Y-%m-%dT%H:%M:%S.%fZ')
+    firstjson1 = row[latcol]
+    jsonobj1 = json.loads(firstjson1)
+    sum3 = 0
+    for x1 in jsonobj1:
+       sum3 = sum3 + x1["started"]
+    time2.append(datetime_timestamp1.strftime("%H:%M:%S.%f\n%d/%m/%Y"))
+    sum4.append(sum3)
+    item1.append(datetime_timestamp1)
+    item1.append(sum3)
+    listoflist2.append(item1)
+
+listoflist2.sort()
+
+time3 = []
+for list5 in listoflist2:
+    date1 = list5[0]
+    time3.append(date1)
+# print (time3)
+
+sum5 = []
+for list6 in listoflist2:
+    sums2 = list6[1]
+    sum5.append(sums2)
+# print (sum5)
 
 
 # fig, ax = plt.subplots()
@@ -93,7 +125,7 @@ plt.style.use("_mpl-gallery")
 fig, ax = plt.subplots()
 myFmt = DateFormatter("%H:%M:%S\n%d/%m/%Y")
 ax.xaxis.set_major_formatter(myFmt)
-ax.plot(time1, sum1, "x-c", linewidth = 3)
+ax.plot(time1, sum1, "x-c", time3, sum5, "x-m", linewidth = 3)
 
 
 # plt.gcf().autofmt_xdate()
