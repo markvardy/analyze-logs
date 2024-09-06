@@ -73,9 +73,6 @@ for list4 in listoflist:
     sum1.append(sums)
 # print (sum1)
 
-
-time2 = []
-sum4 = []
 listoflist2 = []
 for row in api2:
     item1 = []
@@ -87,8 +84,8 @@ for row in api2:
     sum3 = 0
     for x1 in jsonobj1:
        sum3 = sum3 + x1["started"]
-    time2.append(datetime_timestamp1.strftime("%H:%M:%S.%f\n%d/%m/%Y"))
-    sum4.append(sum3)
+    # time2.append(datetime_timestamp1.strftime("%H:%M:%S.%f\n%d/%m/%Y"))
+    # sum4.append(sum3)
     item1.append(datetime_timestamp1)
     item1.append(sum3)
     listoflist2.append(item1)
